@@ -32,7 +32,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES ('00273924','$2y$10$h9UZ3xRrp.tt0aQW88m7Mu4KT/ugF7kFByNkV9ZhXH/PelZCXQGQG','Christopher','Krieder','C.Krieder@cnu.edu',NULL,NULL,2022,'student',NULL,0,NULL),('00970893','$2y$10$9L0/PRAORjk6TE1p1z68a.R/xqjqbY.Lxepe7JREM.PEcCNGHjgM6','North','Hess','north.hess.19@cnu.edu',NULL,NULL,2022,'student',NULL,0,NULL),('00978362','$2y$10$L/LadsTcX4lc2dWn3GJgu.EZwOg2I8DHGpLT0HPxjgggtJ1DmF3q.','Christian','Wagner','christian.wagner.19@cnu.edu','Information Science','Computer Science',2019,'student','\r\n Take 250 this fall\r\nTake 280 in spring instead',0,NULL),('02222','$2y$10$nljm.GZzUWTuTppf95z9oeSRvEUPm3DialScSaZ9kiaE1/WAWf4L6','Brett','P','Brett.P.22@cnu.edu','Information Science','Computer Science',2022,'student',NULL,0,NULL);
+INSERT INTO `student` VALUES ('00970893','$2y$10$9L0/PRAORjk6TE1p1z68a.R/xqjqbY.Lxepe7JREM.PEcCNGHjgM6','North','Hess','north.hess.19@cnu.edu',NULL,NULL,2022,'student',NULL,0,NULL),('00978362','$2y$10$Zq6QxCNW.WX0X0vnxP5nneInEASp0Rss/D4OdkaHY.bdayRPJekAu','Christian','Wagner','christian.wagner.19@cnu.edu','Information Science','Computer Science',2019,'student','\r\nTake 250 this fall\r\nTake 280 in spring instead',0,NULL);
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -57,7 +57,7 @@ CREATE TABLE `FourYearPlan` (
 
 LOCK TABLES `FourYearPlan` WRITE;
 /*!40000 ALTER TABLE `FourYearPlan` DISABLE KEYS */;
-INSERT INTO `FourYearPlan` VALUES ('00273924',NULL,8,6),('00978362','1,1,CPSC 150;1,2,CPSC 150L;1,3,PHYS 151;1,4,PHYS 151L;2,1,CPSC 250;2,2,CPSC 250L;2,3,CPSC 215;3,1,CPSC 255;4,1,CPSC 280;5,1,CPSC 351;6,1,CPSC 351;',8,6);
+INSERT INTO `FourYearPlan` VALUES ('00978362','1,1,CPSC 150;1,2,CPSC 150L;1,3,PHYS 151;1,4,PHYS 151L;2,1,CPSC 250;2,2,CPSC 250L;2,3,CPSC 215;3,1,CPSC 255;4,1,CPSC 280;5,1,CPSC 351;6,1,CPSC 351;',8,6);
 /*!40000 ALTER TABLE `FourYearPlan` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `advisor` (
 
 LOCK TABLES `advisor` WRITE;
 /*!40000 ALTER TABLE `advisor` DISABLE KEYS */;
-INSERT INTO `advisor` VALUES ('000','$2y$10$wfGgcWFEORp3HuQO1BVjtuC0Xmzy1SCN12EL9GQdw9UA8c0w791Pe','Chair','Account','Chair.Account@cnu.edu','advisor',1,'PCSE','Luter 140','Monday: 5pm-6:00pm Tuesday: 3pm-5:45pm Friday: 2pm-3:25pm'),('001','$2y$10$7aCOfJuiqgxkQUm64cBW4.l6AV/zzosI9IdIuYOh2xGyBIrqG1rU2','Professor','Lapke','Professor.Lapke@cnu.edu','advisor',0,'PCSE','Luter 231','M/W/F 3:00pm-4:45pm'),('0011','$2y$10$DGvhjLncmXPiezAZy8rei.fIUA.bxmDAIoJXQ.hvjV7zF.0EtSAmG','Professor','Brett','P.Brett@cnu.edu','advisor',0,NULL,NULL,NULL),('00273924','$2y$10$3PbS3hQa97BVnNEGjgyoU.4Cyr5nfVoHkvLxurCx6ZOk4Ib04yX2W','Christopher','Krieder','C.Krieder@cnu.edu','advisor',1,'PCSE','Luter 324','TH 3 - 4:30'),('00999999','$2y$10$qE.0HCe5L/9AVRyIwmi8b.B0psYt9OHdB8UlCRVpGu4pHN5cZH0g6','Michael','Lapke','Michael.Lapke@cnu.edu','advisor',1,'PCSE','Luter 333','MWF 1 - 2:30');
+INSERT INTO `advisor` VALUES ('00273924','$2y$10$3PbS3hQa97BVnNEGjgyoU.4Cyr5nfVoHkvLxurCx6ZOk4Ib04yX2W','Christopher','Krieder','C.Krieder@cnu.edu','advisor',1,'PCSE','Luter 324','Monday: 5pm-6:00pm Tuesday: 3pm-5:45pm Friday: 2pm-3:25pm'),('00999999','$2y$10$qE.0HCe5L/9AVRyIwmi8b.B0psYt9OHdB8UlCRVpGu4pHN5cZH0g6','Michael','Lapke','Michael.Lapke@cnu.edu','advisor',1,'PCSE','Luter 333','Monday/Wednesday/Friday 1:00 - 2:30pm');
 /*!40000 ALTER TABLE `advisor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,7 +124,7 @@ CREATE TABLE `advising_meeting` (
 
 LOCK TABLES `advising_meeting` WRITE;
 /*!40000 ALTER TABLE `advising_meeting` DISABLE KEYS */;
-INSERT INTO `advising_meeting` VALUES (561,NULL,'001','2022-04-19 16:15:00','ONL','Open'),(562,NULL,'001','2022-04-19 14:00:00','Luter 231','Open'),(563,NULL,'001','2022-04-27 19:15:00','Luter 231','Open'),(564,NULL,'001','2022-04-27 19:30:00','Luter 231','Request'),(565,NULL,'001','2022-04-19 20:45:00','Luter 231','Open'),(566,NULL,'001','2022-04-19 20:30:00','Luter 231','Open'),(567,'00978362','001','2022-04-20 23:25:00','Luter 231','Request'),(568,NULL,'00999999','2022-04-22 20:30:00','Luter 333','Open'),(569,NULL,'00999999','2022-04-22 21:00:00','Luter 333','Open');
+INSERT INTO `advising_meeting` VALUES (567,'00978362','00999999','2022-04-20 23:25:00','Luter 231','Request');
 /*!40000 ALTER TABLE `advising_meeting` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -255,10 +255,4 @@ LOCK TABLES `note` WRITE;
 /*!40000 ALTER TABLE `note` DISABLE KEYS */;
 INSERT INTO `note` VALUES (44,'00978362','00999999','2022-04-20 19:46:43','Take 250','This student needs to take CPSC 250 in Fall 2020'),(45,'00978362','00999999','2022-04-20 19:47:19','Take 280','Recommended student take 280 in the spring instead of the fall'),(46,'00970893','00273924','2022-04-20 23:21:46','Note 1','THis is a note');
 /*!40000 ALTER TABLE `note` ENABLE KEYS */;
-UNLOCK TABLES;
-
-LOCK TABLES `student` WRITE;
-/*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES ('00273924','$2y$10$h9UZ3xRrp.tt0aQW88m7Mu4KT/ugF7kFByNkV9ZhXH/PelZCXQGQG','Christopher','Krieder','C.Krieder@cnu.edu',NULL,NULL,2022,'student',NULL,0,NULL),('00970893','$2y$10$9L0/PRAORjk6TE1p1z68a.R/xqjqbY.Lxepe7JREM.PEcCNGHjgM6','North','Hess','north.hess.19@cnu.edu',NULL,NULL,2022,'student',NULL,0,NULL),('00978362','$2y$10$L/LadsTcX4lc2dWn3GJgu.EZwOg2I8DHGpLT0HPxjgggtJ1DmF3q.','Christian','Wagner','christian.wagner.19@cnu.edu','Information Science','Computer Science',2019,'student','\r\n Take 250 this fall\r\nTake 280 in spring instead',0,NULL),('02222','$2y$10$nljm.GZzUWTuTppf95z9oeSRvEUPm3DialScSaZ9kiaE1/WAWf4L6','Brett','P','Brett.P.22@cnu.edu','Information Science','Computer Science',2022,'student',NULL,0,NULL);
-/*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
