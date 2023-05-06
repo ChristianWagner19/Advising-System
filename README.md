@@ -15,7 +15,7 @@ You can view all the source code in the
 
 Or you can view a live demo using the following link:
 
-    ChristianCNU.com/AdvisingSystem
+   [ChristianCNU.com/AdvisingSystem](ChristianCNU.com/AdvisingSystem) 
 
 Here are some premade accounts for you to look at
 
